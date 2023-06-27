@@ -1,11 +1,19 @@
-import {defaultTheme, defineUserConfig} from 'vuepress';
+import { defaultTheme, defineUserConfig } from 'vuepress';
 
-export default  defineUserConfig({
+export default defineUserConfig({
     lang: 'zh-CN',
     title: '西农新手村',
     description: '西北农林科技大学新手指南，使用指南，此指南针对新生编写，为新生入学提供帮助',
     base: '/',
-    head: [],
+    head: [
+        [
+            'link',
+            {
+                rel: "icon",
+                href: "https://pic.mikupan.com/vCxPSU.png"
+            },
+        ]
+    ],
     theme: defaultTheme({
         navbar: [
             {
@@ -17,12 +25,16 @@ export default  defineUserConfig({
                 link: 'https://github.com/nwafu-lab'
             },
         ],
-        repo: 'nwafu-lab/nwafu-guidance',
         sidebar: [
             {
                 'text': '前言',
                 'link': '/',
             },
         ],
+        repo: 'nwafu-lab/nwafu-guidance',
+        docsRepo: 'https://github.com/nwafu-lab/nwafu-guidance',
+        docsBranch: 'main',
+        docsDir: 'docs',
+        editLinkPattern: ':repo/edit/:branch/:path',
     }),
 })
