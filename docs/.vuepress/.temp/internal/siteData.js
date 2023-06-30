@@ -1,4 +1,4 @@
-export const siteData = JSON.parse("{\"base\":\"/nwafu-guidance/\",\"lang\":\"zh-CN\",\"title\":\"西农新手村\",\"description\":\"西北农林科技大学新手指南，使用指南，此指南针对新生编写，为新生入学提供帮助\",\"head\":[],\"locales\":{}}")
+export const siteData = JSON.parse("{\"base\":\"/\",\"lang\":\"zh-CN\",\"title\":\"西农新手村\",\"description\":\"西北农林科技大学新手指南，使用指南，此指南针对新生编写，为新生入学提供帮助\",\"head\":[[\"link\",{\"rel\":\"icon\",\"href\":\"https://pic.mikupan.com/vCxPSU.png\"}]],\"locales\":{}}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()
